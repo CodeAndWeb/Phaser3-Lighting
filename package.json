@@ -1,0 +1,28 @@
+{
+  "name": "Phaser3-Lighting",
+  "version": "1.0.0",
+  "description": "Small example showing how to use normal maps to create light effects with Phaser 3",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeAndWeb/Phaser3-Lighting.git"
+  },
+  "author": "Joachim Grill",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/CodeAndWeb/Phaser3-Lighting/issues"
+  },
+  "homepage": "https://www.codeandweb.com/spriteilluminator/tutorials/how-to-create-light-effects-in-phaser3",
+  "devDependencies": {
+    "webpack-dev-server": "^2.11.0",
+    "webpack": "^3.4.1",
+    "raw-loader": "^0.5.1"
+  },
+  "dependencies": {
+    "phaser": "^3.1.2"
+  }
+}
