@@ -16,10 +16,9 @@ var game = new Phaser.Game(config);
 
 function preload()
 {
-    this.load.image('character', ['assets/character/01.png', 'assets/character/01_n.png']);
-
-    this.load.atlas('character_sheet', 'assets/character.png', 'assets/character.json');
-    this.load.image('character_sheet_n', 'assets/character_n.png');
+    this.load.setPath('assets/');
+    this.load.image('character', ['character/01.png', 'character/01_n.png']);
+    this.load.multiatlas('character_sheet', 'character.json');
 }
 
 
@@ -34,11 +33,6 @@ function create()
     var light  = this.lights.addLight(350, 250, 200);
     this.lights.enable();
     this.lights.setAmbientColor(0x555555);
-
-
-    // link sprite sheet to normal map sheet
-    var normals = this.textures.get('character_sheet_n').getSourceImage();
-    this.textures.get('character_sheet').setDataSource(normals);
 
     // add sprite from sheet
     var capguy_anim = this.add.sprite(550, 300, 'character_sheet', '01');

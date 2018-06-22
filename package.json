@@ -1,6 +1,6 @@
 {
   "name": "Phaser3-Lighting",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Small example showing how to use normal maps to create light effects with Phaser 3",
   "main": "src/index.js",
   "scripts": {
@@ -23,6 +23,6 @@
     "raw-loader": "^0.5.1"
   },
   "dependencies": {
-    "phaser": "^3.3.0"
+    "phaser": "^3.10.1"
   }
 }
